@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="fill_parent"
+	android:layout_gravity="start"
+	android:background="#ffffffff"
+	android:id="@+id/drawer_content"
+    android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/drawer_header"
+		android:layout_width="fill_parent"
+		android:layout_height="200dp"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:background="?attr/colorPrimary">
+
+		<ImageView
+			android:src="@drawable/ic_launcher"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			android:scaleType="centerCrop"
+			android:id="@+id/creator" />
+
+		<TextView
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffffff"
+			android:text="Custom Background\nv1.5.0"/>
+	</LinearLayout>
+
+	<ListView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/listMenu"
+		android:padding="8dp" />
+
+
+
+</LinearLayout>

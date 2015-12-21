@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="Settings Background" >
+<com.dhian.ListPreferenceCompat
+	android:key="background_type"
+	android:defaultValue="0"
+	android:dialogTitle="Choose Background Type"
+	android:entries="@array/background_type_entries"
+	android:entryValues="@array/background_type_value"
+	android:summary=""
+	android:title="Choose Background Type" />
+<com.dhian.SeekBarPreference
+	android:key="background_opacity"
+	android:title="Set Opacity Background"
+	android:summary="Opacity 30"
+	android:dialogMessage="Preview Opacity"
+	android:defaultValue="150"
+	android:text=" %"
+	android:max="255"  />
+
+<com.dhian.colorpicker.ColorPickerPreference
+	android:key="background_color"
+	android:title="Set Background Color"
+	alphaSlider="true"
+	hexValue="true"
+	android:defaultValue="0xff9e9e9e" />
+
+<PreferenceScreen
+	android:key="background_picture"
+	android:title="Set Background Picture" />
+	<com.dhian.ListPreferenceCompat
+		android:key="number_of_colors"
+		android:defaultValue="0"
+		android:dialogTitle="Choose Number Of Colors"
+		android:entries="@array/number_of_colors_entries"
+		android:entryValues="@array/number_of_colors_value"
+		android:summary=""
+		android:title="Number Of Colors" />
+	
+	<com.dhian.ListPreferenceCompat
+		android:key="gradient_orientation"
+		android:defaultValue="0"
+		android:dialogTitle="Choose Gradient Orientation"
+		android:entries="@array/gradient_orientation_entries"
+		android:entryValues="@array/gradient_orientation_value"
+		android:summary=""
+		android:title="Gradient Orientation" />
+	
+	<com.dhian.colorpicker.ColorPickerPreference
+		android:key="color1"
+		android:title="Color One"
+		alphaSlider="true"
+		hexValue="true"
+		android:defaultValue="0xffff0000" />
+	<com.dhian.colorpicker.ColorPickerPreference
+		android:key="color2"
+		android:title="Color Two"
+		alphaSlider="true"
+		hexValue="true"
+		android:defaultValue="0xffffff00" />
+	<com.dhian.colorpicker.ColorPickerPreference
+		android:key="color3"
+		android:title="Color Three"
+		alphaSlider="true"
+		hexValue="true"
+		android:defaultValue="0xff00ff00" />
+
+</PreferenceScreen>
